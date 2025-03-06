@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #797575;
+  padding: 20px;
+}
+
+h1 {
+  color: #4a235a;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #6c3483;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #512e5f;
+}
+
+#brewbtn button {
+  background-color: #28b463;
+  font-size: 24px;
+  padding: 15px 30px;
+}
+
+#brewbtn button:hover {
+  background-color: #1d8348;
+}
+
+.potion-count {
+  font-weight: bold;
+  font-size: 20px;
+  color: #154360;
+}
