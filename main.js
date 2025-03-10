@@ -12,7 +12,7 @@ let currentRecipe = 'healing'; // Standard oppskrift
 // Definerer oppskrifter for ulike trylledrikker
 const recipes = {
     healing: { herbs: 2, berries: 1, mushrooms: 1 },
-    energy: { herbs: 1, water: 2, flowers: 1 }
+    energy: { flowers: 2, water: 1, mushrooms: 2 }
 };
 
 // Funksjon for å legge til ingredienser i kjelen
@@ -71,7 +71,21 @@ function switchPotion(type) {
         currentRecipe = type;
         console.log(`Switched to brewing a ${type} potion.`);
         resetCauldron(); // Tømmer kjelen ved bytte av oppskrift
+        
+        // Oppdaterer oppskriftsbeskrivelsen i HTML
+        updateRecipeText();
     } else {
         console.log("Invalid potion type!");
+    }
+}
+
+// Funksjon for å oppdatere oppskriftsteksten
+function updateRecipeText() {
+    const recipeText = document.getElementById("recipe-text");
+    
+    if (currentRecipe === 'healing') {
+        recipeText.textContent = "Create a Healing Potion! You need: 2 Herbs, 1 Berry, and 1 Mushroom.";
+    } else if (currentRecipe === 'energy') {
+        recipeText.textContent = "Create an Energy Potion! You need: 2 Flowers, 1 Water, and 2 Mushrooms.";
     }
 }
