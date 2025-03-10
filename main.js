@@ -12,7 +12,7 @@ let currentRecipe = 'healing'; // Standard oppskrift
 // Definerer oppskrifter for ulike trylledrikker
 const recipes = {
     healing: { herbs: 2, berries: 1, mushrooms: 1 },
-    energy: { flowers: 2, water: 1, mushrooms: 2 }
+    energy: { flowers: 2, water: 1, mushrooms: 1 }
 };
 
 // Funksjon for å legge til ingredienser i kjelen
