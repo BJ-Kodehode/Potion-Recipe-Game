@@ -86,6 +86,6 @@ function updateRecipeText() {
     if (currentRecipe === 'healing') {
         recipeText.textContent = "Create a Healing Potion! You need: 2 Herbs, 1 Berry, and 1 Mushroom.";
     } else if (currentRecipe === 'energy') {
-        recipeText.textContent = "Create an Energy Potion! You need: 2 Flowers, 1 Water, and 2 Mushrooms.";
+        recipeText.textContent = "Create an Energy Potion! You need: 2 Flowers, 1 Water, and 1 Mushrooms.";
     }
 }
