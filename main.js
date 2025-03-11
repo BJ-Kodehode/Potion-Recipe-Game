@@ -12,7 +12,7 @@ let currentRecipe = 'healing'; // Standard oppskrift
 // Definerer oppskrifter for ulike trylledrikker
 const recipes = {
     healing: { herbs: 2, berries: 1, mushrooms: 1 },
-    energy: { flowers: 2, water: 1, mushrooms: 1 }
+    energy: { flowers: 2, water: 1, mushrooms: 2 }
 };
 
 // Funksjon for å legge til ingredienser i kjelen
@@ -86,6 +86,6 @@ function updateRecipeText() {
     if (currentRecipe === 'healing') {
         recipeText.textContent = "Create a Healing Potion! You need: 2 Herbs, 1 Berry, and 1 Mushroom.";
     } else if (currentRecipe === 'energy') {
-        recipeText.textContent = "Create an Energy Potion! You need: 2 Flowers, 1 Water, and 1 Mushrooms.";
+        recipeText.textContent = "Create an Energy Potion! You need: 2 Flowers, 1 Water, and 2 Mushrooms.";
     }
 }
